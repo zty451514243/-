@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	a{
+		font-size:4em;
+	}
+	a:link{
+		color:blank;
+      background:red;-
+      text-decoration:none;
+	}
+	a:visited{
+        color:green;
+	}
+	a:hover{
+		color:yellow;
+	}
+	a:active{
+		color:blue;
+	}
+	.c{
+		width: 50px;
+      height:100px;
+      border: 2px solid #ddd;
+      position: relative;
+	}
+	.c .phone{
+      width:900px;
+      height: 900px;
+      background: url("http://cdn.duitang.com/uploads/item/201411/24/20141124215159_UcTLL.thumb.700_0.jpeg") no-repeat;
+      position: absolute;
+      left:120px;
+      top:-70px;
+      opacity: 0;
+      transition:all 2s;
+    }
+    .c:hover .phone{
+      opacity: 1;
+    }
+    
+</style>
+</head>
+<body>
+	<a href="//www.baidu.com">百度</a>
+  <div class="c">
+    <div class="phone"></div>
+  </div>
+</html>
